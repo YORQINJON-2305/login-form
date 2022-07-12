@@ -1,126 +1,148 @@
 @font-face {
-    font-family: "Poppins";
-    font-weight: 400;
-    src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), 
-         url("../fonts/poppins-v20-latin-regular.woff") format("woff"); 
-  }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 500;
-    src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"),
-         url("../fonts/poppins-v20-latin-500.woff") format("woff"); 
-  }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 600;
-    src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), 
-         url("../fonts/poppins-v20-latin-600.woff") format("woff"); 
-  }
-  @font-face {
-    font-family: "Poppins";
-    font-weight: 700;
-    src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), 
-         url("../fonts/poppins-v20-latin-700.woff") format("woff");
-  }
-
-*{
-    box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-600.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-700.woff") format("woff");
 }
 
-body{
-    margin: 0;
-    font-family: "Poppins";
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 120px;
+* {
+  box-sizing: border-box;
 }
 
-.container{
-    width: 1240px;
-    margin: 0 auto;
-    padding: 0px 20px;
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
 }
 
-.wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0px 20px;
 }
 
-.text-wrapper{
-    width: 525px;
-    color: #fff;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.title{
-    font-size: 50px;
-    line-height: 55px;
-    margin-bottom: 40px;
+.text-wrapper {
+  width: 525px;
+  color: #fff;
 }
 
-.text{
-    font-weight: 500;
+.title {
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 40px;
 }
 
-.free-link{
-    display: block;
-    padding: 17px 110px;
-    color: #fff;
-    background-color: #5E54A4;
-    text-decoration: none;
-    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
-    border-radius: 10px;
-    margin-bottom: 24px;
+.text {
+  font-weight: 500;
 }
 
-.form{
-    width: 540px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0px;
+.free-link {
+  display: block;
+  padding: 17px 110px;
+  color: #fff;
+  background-color: #5e54a4;
+  text-decoration: none;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.form {
+  width: 540px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
 }
 
 .form-input {
-    width: 460px;
-    padding: 15px 32px;
-    font-weight: 600;
-    margin: 20px 0px;
-    background: #FFFFFF;
-    border: 1px solid #DEDEDE;
-    border-radius: 5px;
-    outline-color: #5E54A4;
-    caret-color: #5E54A4;
+  width: 460px;
+  padding: 15px 32px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  outline-color: #5e54a4;
+  caret-color: #5e54a4;
 }
 
-
-.form-button{
-    padding: 15px 134px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #38CC8B;
-    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
-    border: none;
-    border-radius: 5px;
+.form-input:not(:placeholder-shown):not(:focus):invalid{
+    background-image: url("../images/invalid-mark.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    border: 1px solid red;
 }
 
-.form-button:active{
-    opacity: 0.5;
+.form-input:not(:placeholder-shown):not(:focus):invalid ~ .warning-text{
+    opacity: 1;
 }
 
-.form-end-text{
-    font-size: 11px;
-    font-weight: 500;
-    color:#A6A1CF;
+.warning-text {
+  display: block;
+  opacity: 0;
+  margin: 0;
+  margin-bottom: 19px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: right;
+  color: #ff7979;
 }
 
-.terms-link{
-    font-weight: 600;
-    color:#FF7979;
-    text-decoration: none;
+.form-button {
+  padding: 15px 134px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #38cc8b;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border: none;
+  border-radius: 5px;
+}
+
+.form-button:active {
+  opacity: 0.5;
+}
+
+.form-end-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: #a6a1cf;
+}
+
+.terms-link {
+  font-weight: 600;
+  color: #ff7979;
+  text-decoration: none;
 }

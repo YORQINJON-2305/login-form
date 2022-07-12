@@ -18,12 +18,24 @@
                     </div>
                     <div class="form-wrapper">
                         <a class="free-link" href="#"><strong>Try it free 7 days </strong> then $20/mo. thereafter</a>
-                        <form action="https://echo/htmlacademy/ru/courses" method="post" autocomplete="off">
+                        <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
                             <div class="form">
-                                <input class="form-input " type="text" name="name" aria-label="Please enter your first name" placeholder="First Name" >
-                                <input class="form-input " type="text" name="surname" aria-label="Please enter your last name" placeholder="Last Name">
-                                <input class="form-input " type="email" name="email" aria-label="Enter your email address" placeholder="Email Address">
-                                <input class="form-input " type="password" name="password" aria-label="Enter your password" placeholder="Password">
+                                <label>
+                                    <input class="form-input " type="text" name="name" aria-label="Please enter your first name" minlength="2" placeholder="First Name" required>
+                                    <span class="warning-text" aria-hidden="true">First Name cannot be empty</span>
+                                </label>
+                                <label>
+                                    <input class="form-input " type="text" name="surname" aria-label="Please enter your last name" minlength="3" placeholder="Last Name" required>
+                                    <span class="warning-text" aria-hidden="true">Last Name cannot be empty</span>
+                                </label>
+                                <label>
+                                    <input class="form-input " type="email" name="email" aria-label="Enter your email address" placeholder="Email Address" required>
+                                    <span class="warning-text" aria-hidden="true">Looks like this is not an email</span>
+                                </label>
+                                <label>
+                                    <input class="form-input " type="password" name="password" aria-label="Enter your password" minlength="6" placeholder="Password" required>
+                                    <span class="warning-text" aria-hidden="true">Password cannot be empty</span>
+                                </label>
                                 <button type="submit" class="form-button">CLAIM YOUR FREE TRIAL</button>
                                 <p class="form-end-text">By clicking the button, you are agreeing to our <a class="terms-link" href="#">Terms and Services</a></p>
                             </div>
